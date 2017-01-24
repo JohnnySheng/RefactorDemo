@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0426427D1E37541600126773 /* ActivityCellHeaderViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0426427C1E37541600126773 /* ActivityCellHeaderViewModel.m */; };
 		049546901E2F1E1200374D2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495468F1E2F1E1200374D2C /* main.m */; };
 		049546931E2F1E1200374D2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 049546921E2F1E1200374D2C /* AppDelegate.m */; };
 		049546961E2F1E1200374D2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049546951E2F1E1200374D2C /* ViewController.m */; };
@@ -17,7 +18,7 @@
 		049546B41E2F1E1200374D2C /* RefactorDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 049546B31E2F1E1200374D2C /* RefactorDemoUITests.m */; };
 		04CD103A1E36FD3500D4AEEC /* ActivityCellHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CD10391E36FD3500D4AEEC /* ActivityCellHeaderView.m */; };
 		04CD103D1E37011F00D4AEEC /* ActivityCellHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CD103C1E37011F00D4AEEC /* ActivityCellHeaderView.xib */; };
-		60DD01AA9F9C7954B5383E79 /* libPods-RefactorDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA19E89EF6A34A206EB8489D /* libPods-RefactorDemo.a */; };
+		50B35B4B2802908F9F26E207 /* Pods_RefactorDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F9D21A871D339393DB4B06 /* Pods_RefactorDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0426427B1E37541600126773 /* ActivityCellHeaderViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityCellHeaderViewModel.h; sourceTree = "<group>"; };
+		0426427C1E37541600126773 /* ActivityCellHeaderViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityCellHeaderViewModel.m; sourceTree = "<group>"; };
 		0495468B1E2F1E1200374D2C /* RefactorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefactorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0495468F1E2F1E1200374D2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		049546911E2F1E1200374D2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,7 +62,7 @@
 		04CD103C1E37011F00D4AEEC /* ActivityCellHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityCellHeaderView.xib; sourceTree = "<group>"; };
 		5A30CCFD08F57AE0B33E59FA /* Pods-RefactorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RefactorDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RefactorDemo/Pods-RefactorDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8D66B41C15A5EA674217AD18 /* Pods-RefactorDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RefactorDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RefactorDemo/Pods-RefactorDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		CA19E89EF6A34A206EB8489D /* libPods-RefactorDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RefactorDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1F9D21A871D339393DB4B06 /* Pods_RefactorDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RefactorDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60DD01AA9F9C7954B5383E79 /* libPods-RefactorDemo.a in Frameworks */,
+				50B35B4B2802908F9F26E207 /* Pods_RefactorDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +128,8 @@
 				04CD10381E36FD3500D4AEEC /* ActivityCellHeaderView.h */,
 				04CD10391E36FD3500D4AEEC /* ActivityCellHeaderView.m */,
 				04CD103C1E37011F00D4AEEC /* ActivityCellHeaderView.xib */,
+				0426427B1E37541600126773 /* ActivityCellHeaderViewModel.h */,
+				0426427C1E37541600126773 /* ActivityCellHeaderViewModel.m */,
 			);
 			path = RefactorDemo;
 			sourceTree = "<group>";
@@ -167,7 +172,7 @@
 		BF9A05355010AF3E86CC36D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CA19E89EF6A34A206EB8489D /* libPods-RefactorDemo.a */,
+				E1F9D21A871D339393DB4B06 /* Pods_RefactorDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 					0495468A1E2F1E1200374D2C = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = R3JE654BXQ;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					049546A31E2F1E1200374D2C = {
@@ -360,6 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0426427D1E37541600126773 /* ActivityCellHeaderViewModel.m in Sources */,
 				04CD103A1E36FD3500D4AEEC /* ActivityCellHeaderView.m in Sources */,
 				049546961E2F1E1200374D2C /* ViewController.m in Sources */,
 				049546931E2F1E1200374D2C /* AppDelegate.m in Sources */,
@@ -517,6 +524,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DaSheng.RefactorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -531,6 +539,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DaSheng.RefactorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
