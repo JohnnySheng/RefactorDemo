@@ -15,6 +15,9 @@
 		0495469E1E2F1E1200374D2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0495469C1E2F1E1200374D2C /* LaunchScreen.storyboard */; };
 		049546A91E2F1E1200374D2C /* RefactorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 049546A81E2F1E1200374D2C /* RefactorDemoTests.m */; };
 		049546B41E2F1E1200374D2C /* RefactorDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 049546B31E2F1E1200374D2C /* RefactorDemoUITests.m */; };
+		04CD103A1E36FD3500D4AEEC /* ActivityCellHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CD10391E36FD3500D4AEEC /* ActivityCellHeaderView.m */; };
+		04CD103D1E37011F00D4AEEC /* ActivityCellHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CD103C1E37011F00D4AEEC /* ActivityCellHeaderView.xib */; };
+		60DD01AA9F9C7954B5383E79 /* libPods-RefactorDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA19E89EF6A34A206EB8489D /* libPods-RefactorDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		049546AF1E2F1E1200374D2C /* RefactorDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefactorDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		049546B31E2F1E1200374D2C /* RefactorDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RefactorDemoUITests.m; sourceTree = "<group>"; };
 		049546B51E2F1E1200374D2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CD10381E36FD3500D4AEEC /* ActivityCellHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityCellHeaderView.h; sourceTree = "<group>"; };
+		04CD10391E36FD3500D4AEEC /* ActivityCellHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityCellHeaderView.m; sourceTree = "<group>"; };
+		04CD103C1E37011F00D4AEEC /* ActivityCellHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityCellHeaderView.xib; sourceTree = "<group>"; };
+		5A30CCFD08F57AE0B33E59FA /* Pods-RefactorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RefactorDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RefactorDemo/Pods-RefactorDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8D66B41C15A5EA674217AD18 /* Pods-RefactorDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RefactorDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RefactorDemo/Pods-RefactorDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CA19E89EF6A34A206EB8489D /* libPods-RefactorDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RefactorDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60DD01AA9F9C7954B5383E79 /* libPods-RefactorDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +95,8 @@
 				049546A71E2F1E1200374D2C /* RefactorDemoTests */,
 				049546B21E2F1E1200374D2C /* RefactorDemoUITests */,
 				0495468C1E2F1E1200374D2C /* Products */,
+				2E5BBEAEDF9490732D57101D /* Pods */,
+				BF9A05355010AF3E86CC36D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +122,9 @@
 				0495469C1E2F1E1200374D2C /* LaunchScreen.storyboard */,
 				0495469F1E2F1E1200374D2C /* Info.plist */,
 				0495468E1E2F1E1200374D2C /* Supporting Files */,
+				04CD10381E36FD3500D4AEEC /* ActivityCellHeaderView.h */,
+				04CD10391E36FD3500D4AEEC /* ActivityCellHeaderView.m */,
+				04CD103C1E37011F00D4AEEC /* ActivityCellHeaderView.xib */,
 			);
 			path = RefactorDemo;
 			sourceTree = "<group>";
@@ -140,6 +155,23 @@
 			path = RefactorDemoUITests;
 			sourceTree = "<group>";
 		};
+		2E5BBEAEDF9490732D57101D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D66B41C15A5EA674217AD18 /* Pods-RefactorDemo.debug.xcconfig */,
+				5A30CCFD08F57AE0B33E59FA /* Pods-RefactorDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BF9A05355010AF3E86CC36D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA19E89EF6A34A206EB8489D /* libPods-RefactorDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 049546B81E2F1E1200374D2C /* Build configuration list for PBXNativeTarget "RefactorDemo" */;
 			buildPhases = (
+				2E58CE8C67C102F12813852C /* [CP] Check Pods Manifest.lock */,
 				049546871E2F1E1200374D2C /* Sources */,
 				049546881E2F1E1200374D2C /* Frameworks */,
 				049546891E2F1E1200374D2C /* Resources */,
+				C36698A0008780CB9097D82B /* [CP] Embed Pods Frameworks */,
+				E9A2BF2998952D8B3633F4FA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CD103D1E37011F00D4AEEC /* ActivityCellHeaderView.xib in Resources */,
 				0495469E1E2F1E1200374D2C /* LaunchScreen.storyboard in Resources */,
 				0495469B1E2F1E1200374D2C /* Assets.xcassets in Resources */,
 				049546991E2F1E1200374D2C /* Main.storyboard in Resources */,
@@ -271,11 +307,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E58CE8C67C102F12813852C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C36698A0008780CB9097D82B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RefactorDemo/Pods-RefactorDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9A2BF2998952D8B3633F4FA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RefactorDemo/Pods-RefactorDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		049546871E2F1E1200374D2C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CD103A1E36FD3500D4AEEC /* ActivityCellHeaderView.m in Sources */,
 				049546961E2F1E1200374D2C /* ViewController.m in Sources */,
 				049546931E2F1E1200374D2C /* AppDelegate.m in Sources */,
 				049546901E2F1E1200374D2C /* main.m in Sources */,
@@ -423,10 +508,12 @@
 		};
 		049546B91E2F1E1200374D2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D66B41C15A5EA674217AD18 /* Pods-RefactorDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R3JE654BXQ;
 				INFOPLIST_FILE = RefactorDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DaSheng.RefactorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -435,10 +522,12 @@
 		};
 		049546BA1E2F1E1200374D2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A30CCFD08F57AE0B33E59FA /* Pods-RefactorDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R3JE654BXQ;
 				INFOPLIST_FILE = RefactorDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DaSheng.RefactorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +603,7 @@
 				049546BA1E2F1E1200374D2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		049546BB1E2F1E1200374D2C /* Build configuration list for PBXNativeTarget "RefactorDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +612,7 @@
 				049546BD1E2F1E1200374D2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		049546BE1E2F1E1200374D2C /* Build configuration list for PBXNativeTarget "RefactorDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +621,7 @@
 				049546C01E2F1E1200374D2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "ActivityCellHeaderView.h"
 
-@interface ViewController ()
+@interface ViewController ()<ActivityCellHeaderViewDelegate>
 
 @end
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
+   
 }
 
 
@@ -25,5 +28,30 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+}
 
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+}
+
+
+- (void)dealloc
+{
+    
+}
+
+
+#pragma mark delegate
+- (IBAction)showView:(id)sender {
+     [ActivityCellHeaderView presentInViewController:self withFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 40)];
+}
+- (void) touchAFromView:(ActivityCellHeaderView*) decoupledView{
+    
+}
+- (void) touchBFromView:(ActivityCellHeaderView*) decoupledView{
+    
+}
 @end
