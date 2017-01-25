@@ -19,9 +19,8 @@
 		042643061E389A7D00126773 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042642F61E389A7D00126773 /* LoginViewController.m */; };
 		042643071E389A7D00126773 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042642F71E389A7D00126773 /* LoginViewController.xib */; };
 		042643081E389A7D00126773 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042642FB1E389A7D00126773 /* Assets.xcassets */; };
+		042643111E389FC700126773 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 042643101E389FC700126773 /* Info.plist */; };
 		049546901E2F1E1200374D2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495468F1E2F1E1200374D2C /* main.m */; };
-		049546991E2F1E1200374D2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049546971E2F1E1200374D2C /* Main.storyboard */; };
-		0495469E1E2F1E1200374D2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0495469C1E2F1E1200374D2C /* LaunchScreen.storyboard */; };
 		049546A91E2F1E1200374D2C /* RefactorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 049546A81E2F1E1200374D2C /* RefactorDemoTests.m */; };
 		049546B41E2F1E1200374D2C /* RefactorDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 049546B31E2F1E1200374D2C /* RefactorDemoUITests.m */; };
 		50B35B4B2802908F9F26E207 /* Pods_RefactorDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F9D21A871D339393DB4B06 /* Pods_RefactorDemo.framework */; };
@@ -68,11 +67,9 @@
 		0426430A1E389B5200126773 /* UtilsMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
 		0426430B1E389B8200126773 /* VendorMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VendorMacro.h; sourceTree = "<group>"; };
 		0426430C1E389C5A00126773 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		042643101E389FC700126773 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0495468B1E2F1E1200374D2C /* RefactorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefactorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0495468F1E2F1E1200374D2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		049546981E2F1E1200374D2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0495469D1E2F1E1200374D2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0495469F1E2F1E1200374D2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		049546A41E2F1E1200374D2C /* RefactorDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefactorDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		049546A81E2F1E1200374D2C /* RefactorDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RefactorDemoTests.m; sourceTree = "<group>"; };
 		049546AA1E2F1E1200374D2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -328,16 +325,14 @@
 			isa = PBXGroup;
 			children = (
 				042642D21E389A7D00126773 /* AppDelegate */,
-				042642D51E389A7D00126773 /* Base.lproj */,
 				042642DA1E389A7D00126773 /* General */,
 				042642F81E389A7D00126773 /* Helpers */,
 				042642F91E389A7D00126773 /* Macro */,
 				042642FA1E389A7D00126773 /* Resources */,
 				042642FC1E389A7D00126773 /* Vendors */,
-				049546971E2F1E1200374D2C /* Main.storyboard */,
-				0495469C1E2F1E1200374D2C /* LaunchScreen.storyboard */,
-				0495469F1E2F1E1200374D2C /* Info.plist */,
+				042642D51E389A7D00126773 /* Base.lproj */,
 				0495468E1E2F1E1200374D2C /* Supporting Files */,
+				042643101E389FC700126773 /* Info.plist */,
 			);
 			path = RefactorDemo;
 			sourceTree = "<group>";
@@ -500,10 +495,9 @@
 			files = (
 				042643021E389A7D00126773 /* ActivityCellHeaderView.xib in Resources */,
 				042642FE1E389A7D00126773 /* LaunchScreen.storyboard in Resources */,
+				042643111E389FC700126773 /* Info.plist in Resources */,
 				042643071E389A7D00126773 /* LoginViewController.xib in Resources */,
-				0495469E1E2F1E1200374D2C /* LaunchScreen.storyboard in Resources */,
 				042643081E389A7D00126773 /* Assets.xcassets in Resources */,
-				049546991E2F1E1200374D2C /* Main.storyboard in Resources */,
 				042642FF1E389A7D00126773 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -634,22 +628,6 @@
 				042642D91E389A7D00126773 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		049546971E2F1E1200374D2C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				049546981E2F1E1200374D2C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0495469C1E2F1E1200374D2C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0495469D1E2F1E1200374D2C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
