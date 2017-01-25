@@ -26,22 +26,6 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RefactorDemo/Login/ViewModels/LoginViewModel.m"
-            timestampString = "507021285.405943"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "-validSignal"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RefactorDemo/Login/ViewModels/LoginViewModel.m"
             timestampString = "507021384.726058"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"

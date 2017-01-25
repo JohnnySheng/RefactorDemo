@@ -8,7 +8,6 @@
 
 #import "LoginViewController.h"
 #import "LoginViewModel.h"
-#import "ReactiveCocoa.h"
 #import "User.h"
 
 @interface LoginViewController ()
