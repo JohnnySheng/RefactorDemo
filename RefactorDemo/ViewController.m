@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ActivityCellHeaderView.h"
+#import "LoginViewController.h"
 
 @interface ViewController ()<ActivityCellHeaderViewDelegate>
 
@@ -42,6 +43,13 @@
 {
     
 }
+
+#pragma mark - Actions
+- (IBAction)showLogin:(id)sender {
+    LoginViewController *loginVC = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+    [self presentViewController:loginVC animated:YES completion:nil];
+}
+
 
 
 #pragma mark delegate

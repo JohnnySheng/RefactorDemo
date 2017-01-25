@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0426427D1E37541600126773 /* ActivityCellHeaderViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0426427C1E37541600126773 /* ActivityCellHeaderViewModel.m */; };
+		0426428C1E387BDD00126773 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0426428A1E387BDD00126773 /* LoginViewController.m */; };
+		0426428D1E387BDD00126773 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0426428B1E387BDD00126773 /* LoginViewController.xib */; };
+		042642901E387C1000126773 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0426428F1E387C1000126773 /* LoginViewModel.m */; };
+		042642931E38801300126773 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 042642921E38801300126773 /* User.m */; };
 		049546901E2F1E1200374D2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0495468F1E2F1E1200374D2C /* main.m */; };
 		049546931E2F1E1200374D2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 049546921E2F1E1200374D2C /* AppDelegate.m */; };
 		049546961E2F1E1200374D2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049546951E2F1E1200374D2C /* ViewController.m */; };
@@ -41,6 +45,13 @@
 /* Begin PBXFileReference section */
 		0426427B1E37541600126773 /* ActivityCellHeaderViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityCellHeaderViewModel.h; sourceTree = "<group>"; };
 		0426427C1E37541600126773 /* ActivityCellHeaderViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityCellHeaderViewModel.m; sourceTree = "<group>"; };
+		042642891E387BDD00126773 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		0426428A1E387BDD00126773 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		0426428B1E387BDD00126773 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		0426428E1E387C1000126773 /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		0426428F1E387C1000126773 /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		042642911E38801300126773 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		042642921E38801300126773 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		0495468B1E2F1E1200374D2C /* RefactorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefactorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0495468F1E2F1E1200374D2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		049546911E2F1E1200374D2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,6 +102,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		042642841E387BAF00126773 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				042642851E387BAF00126773 /* Models */,
+				042642861E387BAF00126773 /* Services */,
+				042642871E387BAF00126773 /* ViewModels */,
+				042642881E387BAF00126773 /* Views&ViewControllers */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		042642851E387BAF00126773 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				042642911E38801300126773 /* User.h */,
+				042642921E38801300126773 /* User.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		042642861E387BAF00126773 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		042642871E387BAF00126773 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0426428E1E387C1000126773 /* LoginViewModel.h */,
+				0426428F1E387C1000126773 /* LoginViewModel.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		042642881E387BAF00126773 /* Views&ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				042642891E387BDD00126773 /* LoginViewController.h */,
+				0426428A1E387BDD00126773 /* LoginViewController.m */,
+				0426428B1E387BDD00126773 /* LoginViewController.xib */,
+			);
+			path = "Views&ViewControllers";
+			sourceTree = "<group>";
+		};
 		049546821E2F1E1200374D2C = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +173,7 @@
 		0495468D1E2F1E1200374D2C /* RefactorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				042642841E387BAF00126773 /* Login */,
 				049546911E2F1E1200374D2C /* AppDelegate.h */,
 				049546921E2F1E1200374D2C /* AppDelegate.m */,
 				049546941E2F1E1200374D2C /* ViewController.h */,
@@ -290,6 +348,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0426428D1E387BDD00126773 /* LoginViewController.xib in Resources */,
 				04CD103D1E37011F00D4AEEC /* ActivityCellHeaderView.xib in Resources */,
 				0495469E1E2F1E1200374D2C /* LaunchScreen.storyboard in Resources */,
 				0495469B1E2F1E1200374D2C /* Assets.xcassets in Resources */,
@@ -366,9 +425,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042642931E38801300126773 /* User.m in Sources */,
 				0426427D1E37541600126773 /* ActivityCellHeaderViewModel.m in Sources */,
 				04CD103A1E36FD3500D4AEEC /* ActivityCellHeaderView.m in Sources */,
+				0426428C1E387BDD00126773 /* LoginViewController.m in Sources */,
 				049546961E2F1E1200374D2C /* ViewController.m in Sources */,
+				042642901E387C1000126773 /* LoginViewModel.m in Sources */,
 				049546931E2F1E1200374D2C /* AppDelegate.m in Sources */,
 				049546901E2F1E1200374D2C /* main.m in Sources */,
 			);

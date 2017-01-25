@@ -21,14 +21,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oxX-ho-gz8">
-                                <rect key="frame" x="0.0" y="186" width="375" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bcj-TV-KhE">
-                                <rect key="frame" x="201" y="84" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQu-Px-0cU">
+                                <rect key="frame" x="142" y="211" width="90" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5ag-T7-GPj"/>
+                                    <constraint firstAttribute="width" constant="90" id="95M-NH-5d9"/>
+                                </constraints>
+                                <state key="normal" title="Show Login"/>
+                                <connections>
+                                    <action selector="showLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="twO-ae-HbE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bcj-TV-KhE">
+                                <rect key="frame" x="164" y="347" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9US-tF-d7T"/>
+                                    <constraint firstAttribute="width" constant="46" id="y2D-pB-jZN"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="showView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fP1-79-hAf"/>
@@ -36,14 +45,17 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bcj-TV-KhE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CYM-Xg-GzR"/>
+                            <constraint firstItem="LQu-Px-0cU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="191" id="Pct-ht-Sq4"/>
+                            <constraint firstItem="Bcj-TV-KhE" firstAttribute="top" secondItem="LQu-Px-0cU" secondAttribute="bottom" constant="96" id="tnK-FS-G7w"/>
+                            <constraint firstItem="LQu-Px-0cU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uwo-6f-40z"/>
+                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="containView" destination="oxX-ho-gz8" id="9kZ-Tq-UsY"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+            <point key="canvasLocation" x="-1025" y="17"/>
         </scene>
     </scenes>
 </document>
